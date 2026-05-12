@@ -17,7 +17,7 @@ public class QuestionService {
         return questionDao.findAll();
     }
     
-    public Optional<Question> getQuestSEQUENCEionById(Integer id) {
+    public Optional<Question> getQuestionById(Integer id) {
         return questionDao.findById(id);
     }
 
