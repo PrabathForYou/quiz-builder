@@ -18,21 +18,21 @@ public class QuestionController {
 
     @GetMapping("")
     public ResponseEntity<List<Question>> getAllQuestions() {
-        return new ResponseEntity<>(questionService.getAllQuestions(), HttpStatus.OK);
+        return questionService.getAllQuestions();
     }
 
     @GetMapping("/{id}")
-    public Optional<Question> getQuestionById(@PathVariable Integer id) {
+    public ResponseEntity<Optional<Question>> getQuestionById(@PathVariable Integer id) {
         return questionService.getQuestionById(id);
     }
 
     @GetMapping("category/{catagory}")
-    public List<Question> getQuestionsByCatogory(@PathVariable String catagory) {
+    public ResponseEntity<List<Question>> getQuestionsByCatogory(@PathVariable String catagory) {
         return questionService.getQuestionsByCatogory(catagory);
     }
 
     @PostMapping("")
-    public String addQuestion(@RequestBody Question question) {
+    public ResponseEntity<String> addQuestion(@RequestBody Question question) {
         return questionService.addQuestion(question);
     }
 }
