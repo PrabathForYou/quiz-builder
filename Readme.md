@@ -191,3 +191,11 @@ src/main/java/com/prabath/quiz_builder/
 ## Current scope
 
 The API currently does not provide authentication, question or quiz update/deletion, answer submission, scoring, validation, or generated API documentation.
+
+## API documentation
+
+With the application running locally, the Swagger and OpenAPI resources are available at:
+
+- Swagger UI: [http://localhost:9090/swagger-ui.html](http://localhost:9090/swagger-ui.html)
+- OpenAPI JSON: [http://localhost:9090/v3/api-docs](http://localhost:9090/v3/api-docs)
+- OpenAPI YAML: [http://localhost:9090/v3/api-docs.yaml](http://localhost:9090/v3/api-docs.yaml)
